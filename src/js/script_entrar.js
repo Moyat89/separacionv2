@@ -8,6 +8,6 @@
       }
 
       window.onload = function() {
-        var btn = document.getElementById("myButton");
+        var btn = document.getElementById("boton");
         btn.onclick = entrar;
     }
