@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Separación | Portada</title>
+  <meta name="description" content="Portada de la web fan sobre la serie de Severance">
+  <link rel="stylesheet" type="text/css" href="css/output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  </style>
+  <link rel="icon" type="image/x-icon" href="img/computadora.png">
+  <script type="text/javascript" src="script.js" ></script>
+</head>
+<!--Función que se llama al cargarse el body y esconde el contenido para que haya un botón de entrada-->
+
+<body onload="checkin()" id="body">
+  <main>
+    <!--Envoltorio general-->
+    <div class="content-cover" id="desplegable">
+      <!--Menú de navegación con include-->
+      <include src="navgen.html"></include>
+      <!-- Botón con función para mostrar el contenido-->
+      <button onclick="entrar()" type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
+      <div class="text-cover" id="text">
+        <!--Header con titulo y subtitulo-->
+        <header class="header">
+          <h1><a href="index.html">SEPARACIÓN</a></h1>
+          <h2>Fan Web sobre Severance</h2>
+        </header>
+        <p>Bienvenidos a Separación, la fan web de la nueva serie de <span lang="en">Apple TV</span> <cite
+            lang="en">Severance</cite>, creada Dan Erickson y dirigida por Ben Stiller. <br><br>Utiliza el menú superior
+          para moverte a través de las diferentes categorías de la web.</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

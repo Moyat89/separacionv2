@@ -1,0 +1,336 @@
+/*Elementos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Share Tech Mono", sans-serif;
+  text-shadow: 0 0 8px rgb(255 0 0/0.2), -2px -2px 6px rgb(0 255 0/0.2), 2px 2px 4px rgb(0 255 255/0.2);
+  color: rgb(130, 187, 135);
+  font-size: responsive(1rem, 1.2rem, 400px, 800px);
+  background-image: url(../img/portadabackground.png);
+  background-size: cover;
+  min-height: 100%;
+  background-position: -70vw;
+}
+
+body {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a:hover {
+  color: white;
+}
+
+.content-cover {
+  background-color: rgba(2, 5, 7, 0.8);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  top: responsive(0px, 100px);
+  position: absolute;
+  right: responsive(0rem, 8rem);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border: 2px solid black;
+}
+
+.nav-scroll-gen ul {
+  background-color: rgba(2, 5, 7);
+  list-style: none;
+  background-position: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav-scroll-gen ul li {
+  border: 1px black solid;
+  padding: 0px;
+}
+
+.nav-scroll-gen ul li a {
+  text-decoration: none;
+  color: rgb(130, 187, 135);
+  text-transform: uppercase;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  line-height: 5vh;
+  display: block;
+  text-align: center;
+}
+
+.nav-scroll-gen ul li:hover,
+.nav-scroll-gen ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.text-cover {
+  scrollbar-color: black rgb(130, 187, 135);
+  overflow-x: hidden;
+  height: 95vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: responsive(1.5rem, 3rem);
+  padding: 5% 5% 2.5% 5%;
+}
+
+.header h2 {
+  text-align: center;
+  font-size: responsive(1rem, 1.5rem);
+  padding: 2.5% 5% 5% 5%;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1vw;
+}
+
+/*Categoria*/
+.container-gen {
+  padding-left: responsive(0px, 200px);
+  padding-right: responsive(0px, 200px);
+}
+
+.header-gen {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(2, 5, 7, 0.8);
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-gen h1 a {
+  font-size: responsive(1.5rem, 2rem);
+  text-align: left;
+}
+
+.header-gen h2 {
+  font-size: responsive(1rem, 1.5rem);
+}
+
+.category-wrapper {
+  border: 2px solid black;
+  overflow: hidden;
+  line-height: 5vh;
+  background-color: rgba(2, 5, 7, 0.8);
+}
+
+.categorias ul li a {
+  background-size: cover;
+  text-transform: uppercase;
+  background-position: center;
+  font-size: responsive(1rem, 3rem);
+  font-weight: 700;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgb(140, 196, 143);
+  border: 2px solid rgb(130, 187, 135);
+  align-items: center;
+  text-decoration: none;
+  height: 20vh;
+  display: block;
+  text-align: center;
+  padding-top: 9vh;
+  margin: 10px;
+}
+
+.categorias ul li a:hover {
+  filter: brightness(125%);
+}
+
+.mark {
+  background-image: url(../img/mark.jpg);
+}
+
+.helly {
+  background-image: url(../img/helly.jpg);
+}
+
+.dylan {
+  background-image: url(../img/dylan.png);
+}
+
+.irving {
+  background-image: url(../img/irving.jpg);
+}
+
+.text-category {
+  text-align: justify;
+  overflow-y: hidden;
+  scrollbar-color: black rgb(130, 187, 135);
+  overflow-x: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+#text-placeholder {
+  padding-top: 35vh;
+  display: none;
+}
+
+#current {
+  filter: brightness(125%);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+article {
+  text-align: left;
+}
+
+article h3 {
+  text-align: left;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  text-decoration: underline;
+}
+
+article h2 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+article p {
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+article a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.trailer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+iframe {
+  width: responsive(280px, 560px);
+  height: responsive(157.5px, 315px);
+}
+
+.detalles {
+  padding: 2rem;
+  line-height: 2rem;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 75vw;
+}
+
+table {
+  padding: responsive(0px, 1rem);
+  font-size: responsive(12px, 1rem);
+}
+
+table * {
+  padding-top: 2rem;
+}
+
+table thead th {
+  border: 1px solid;
+  text-align: center;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+table tbody * {
+  border: 1px solid;
+  text-align: center;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+.pictures {
+  display: flex;
+}
+
+.pictures img {
+  width: 50%;
+}
+
+@media screen and (min-width: 571px) {
+  body {
+    overflow-y: scroll;
+  }
+  .content-cover {
+    height: 90vh;
+    width: 90vw;
+  }
+  figure img {
+    width: 70%;
+  }
+  .text-cover {
+    overflow-y: scroll;
+  }
+  .text-category {
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    background-position: initial;
+  }
+  body {
+    overflow-y: auto;
+  }
+  .content-cover {
+    width: 40vw;
+    height: 80vh;
+  }
+  .text-cover {
+    overflow-y: scroll;
+  }
+  .container-gen {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .category-wrapper {
+    display: flex;
+    height: 85vh;
+  }
+  .categorias ul {
+    justify-content: center;
+    list-style-type: none;
+  }
+  .categorias ul li a {
+    display: flex;
+    width: 18vw;
+    padding: 0;
+    justify-content: center;
+    font-size: 2vw;
+  }
+  #text-placeholder {
+    display: block;
+  }
+  figure img {
+    width: 60%;
+  }
+  .text-category {
+    overflow-y: scroll;
+  }
+}
+
+/*# sourceMappingURL=styletransform.css.map */

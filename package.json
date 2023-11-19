@@ -1,0 +1,38 @@
+{
+  "name": "separacion_pac1",
+  "version": "1.0.0",
+  "description": "ejercicio para la asignatura html&css",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%,last 20 years",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moyat89/Separacion.git"
+  },
+  "keywords": [
+    "pac1",
+    "html",
+    "css",
+    "herramientas",
+    "parcel"
+  ],
+  "author": "Teo Alarcon Moya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moyat89/Separacion/issues"
+  },
+  "homepage": "https://github.com/Moyat89/Separacion#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.31",
+    "postcss-responsive": "^0.6.0",
+    "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "parcel": "^2.10.3",
+    "postcss-responsive-type": "^1.0.0"
+  }
+}

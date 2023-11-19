@@ -1,0 +1,8 @@
+{
+    "plugins": {
+     "postcss-responsive": {
+       "minWidth": 480,
+      "maxWidth": 1280
+     }
+    }
+  }
